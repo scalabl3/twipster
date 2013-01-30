@@ -1,0 +1,31 @@
+defaults: &defaults
+
+  superuser_ids:
+    - 1718606
+    
+  facebook_key: 170342489756878
+  facebook_secret: 6f39fd05f5652acaecc58c66a2f3a56f
+  facebook_scope: email,offline_access,read_stream,publish_stream,user_photos,friends_photos,user_hometown,friends_hometown,user_status,friends_status,user_location,friends_location
+  
+  twitter_key: 3MNl3vJham7GKFWSYvPueg
+  twitter_secret: Ok2BgdctAjxoVuMUYaqrQSTj0TZ2ZkwbijM8OvNKg
+  
+  linkedin_key: w6ao8ae4x3vs
+  linkedin_secret: ELnBUZwI2Sz1n2bu
+  
+  meetup_key: 9ufq6p3jh4c2tkciev6rtb7o2r
+  meetup_secret: e7j10qf5j87t3usvjb2tn0sstc
+  
+  user_count_start: 100000
+  page_count_start: 500000
+  session_duration: 2160
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
+  
